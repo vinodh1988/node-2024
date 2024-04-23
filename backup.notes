@@ -1,0 +1,15 @@
+
+
+/*
+a={sno:1,name:"Arjun"}
+
+console.log(this)
+console.log(global)
+
+//Javascript running in browser uses libraries that are supported in 
+// browser like Dom Libraries window.document window.alert
+//In browser the default object is window
+
+// if you use libraries in browser import them with the help of script tag
+// if you want to use third party libraries in node js download them using npm
+*/

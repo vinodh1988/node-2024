@@ -1,0 +1,12 @@
+{
+  "name": "first-node-service",
+  "version": "1.0.0",
+  "description": "A node js backend service",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinodh",
+  "license": "ISC"
+}
