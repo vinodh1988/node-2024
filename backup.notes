@@ -13,3 +13,27 @@ console.log(global)
 // if you use libraries in browser import them with the help of script tag
 // if you want to use third party libraries in node js download them using npm
 */
+
+//const os=require("os")
+//const fs= require("fs")
+import os from 'os'
+import fs from 'fs'
+import {person,sayHi} from './second.js' //normal export can be imported with only exact name
+import second from './second.js'  //default export can imported with any name
+console.log("Home Directory",os.homedir())
+console.log("Number of cpus",os.cpus().length)
+/*
+fs.readFile("backup.notes","utf-8",function(err,data){
+   if(err)
+      console.log(err)
+   else
+      console.log(data)
+})*/
+
+console.log("After the file call")
+
+console.log(person)
+console.log(sayHi("Varun"))
+console.log(second.personRecord)
+console.log(second.greet("Raj"))
+

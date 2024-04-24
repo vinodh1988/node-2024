@@ -1,16 +1,15 @@
-//const os=require("os")
-//const fs= require("fs")
-import os from 'os'
-import fs from 'fs'
+import express from 'express'
 
-console.log("Home Directory",os.homedir())
-console.log("Number of cpus",os.cpus().length)
+const app=express()
 
-fs.readFile("backup.notes","utf-8",function(err,data){
-   if(err)
-      console.log(err)
-   else
-      console.log(data)
+app.get("/home",function(request,response){
+    response.send("This is home")
 })
 
-console.log("After the file call")
+app.get("/",function(request,response){
+    response.send("Hi! Hello ! how are you ! I am Node JS")
+})
+
+app.listen(3000,function(){
+    console.log("The server is started and running on port 3000")
+})
