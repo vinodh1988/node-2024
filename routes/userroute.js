@@ -5,6 +5,7 @@ import path from 'path'
 import userops  from '../database/userscrud.js'
 
 
+
 route.get("/",(request,response)=>{
   userops.getusers((err,data)=>{
     if(err)

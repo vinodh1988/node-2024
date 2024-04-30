@@ -39,12 +39,12 @@ import sequelize from './sequelize.js';
 department.hasMany(employee,{foreignKey: 'department_id'});
 employee.belongsTo(department,{foreignKey: 'department_id'});
 
-department.sync({alter: true,drop: false}).then(() => {
+department.sync({alter: false,drop: false}).then(() => {
     
     console.log("Department table Synched!!!");
   });
 
-employee.sync({alter: true, drop: false}).then(() => {
+employee.sync({alter: false, drop: false}).then(() => {
     
     console.log("Employee table Synched!!!");
   });
